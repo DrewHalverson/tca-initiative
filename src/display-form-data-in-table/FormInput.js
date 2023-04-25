@@ -2,10 +2,11 @@ import React from 'react';
 import '../App.css';
 
 const FormInput = ({handleChange, formInputData, handleSubmit}) => {
-
+  
+  // checks for roll data. If it exists adds roll and modifier data and returns total
   if(formInputData.roll){
     formInputData.total = Number(formInputData.roll) + Number(formInputData.modifier);
-  }
+  };
 
   return(  
       <div className='form-row row' >
